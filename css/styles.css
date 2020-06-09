@@ -1,0 +1,481 @@
+/*+-To apply and save the changes, we open the VS Code Terminal and enter this Code:_  sass --watch sass:css
+        And then Save.*/
+
+/*# sourceMappingURL=styles.css.map */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #00adb5;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General Styles */
+
+body {  
+        /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/ 
+		/*margin: auto; */
+		background: var(--clr-light);
+    	color: var(--clr-dark);
+    	margin: 0;
+    	font-family: var(--ff-primary);
+    	font-size: var(--fs-body);
+    	line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong { font-weight: var(--fw-bold) }
+
+:focus {
+	outline: 3px solid var(--clr-accent);
+	outline-offset: 3px;
+}
+
+/* Buttons */
+
+.btn1 {
+    display: inline-block;
+	padding: .5em 2.5em;
+	background: var(--clr-accent);
+	color: var(--clr-dark);
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: var(--fw-bold);
+	transition: transfrom 200ms ease-in-out;   
+}
+
+.btn1:hover {
+	transform: scale(1.1);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+
+/* Header Section */
+
+.logo {
+	width: 14.291666666666667vw;
+	height: 7.7777777777777777vh;
+}
+
+nav { display: none; }
+
+/* Intro Section */
+
+.intro {
+    position: relative;
+}
+
+.intro__img {
+	box-shadow: var(--bs);
+}
+
+.section__subtitle--intro {
+	display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .intro {
+		display: grid;
+		width: min-content;
+		margin: 0 auto;
+		grid-column-gap: 1em;
+		grid-template-areas:
+			"img title"
+			"img subtitle";
+		grid-template-columns: min-content max-content;
+	}
+
+	.intro__img {
+		grid-area: img;
+		min-width: 250px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.section__subtitle--intro {
+		align-self: start;
+		grid-column: -1 / 1;
+		grid-row: 2;
+		text-align: right;
+		position: relative;
+		left: -1.5em;
+		width: calc(100% + 1.5em);
+	}
+
+}
+
+/* My Services Section */
+
+.my-services {
+	background-color: var(--clr-dark);
+	background-image: url(../img/services-bg.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+	color: var(--clr-light);
+	text-align: center;    
+}
+
+.section__title--services {
+	color: var(--clr-accent);
+	position: relative;
+}
+
+.section__title--services::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-dark);
+	opacity: 0.25;
+}
+
+.services {
+	margin-bottom: 4em;
+}
+
+.service {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+	.services {
+		display: flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.service + .service {
+		margin-left: 2em;
+	}
+}
+
+
+/* About section */
+
+.about-me {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+	.about-me {
+		display: grid;
+		grid-template-columns: 1fr 200px;
+	}
+
+}
+
+/* My Skills Section */
+
+.my-skills {
+	background-color: var(--clr-dark);
+	background-image: url(../img/skills-bg.jpg);
+	background-size: cover;
+	background-position: center;
+    background-blend-mode: lighten;
+	color: var(--clr-light);
+	text-align: center;   
+}
+
+
+.section__title--skills {
+	color: var(--clr-accent);
+	position: relative;
+}
+
+.section__title--skills::after {
+	content: '';
+	display: block;
+	width: 2em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-dark);
+	opacity: 0.25;
+}
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom: 0.78125vw;
+	width:100%;
+	background:#eee;
+	height: 4.861111111111111vh;
+	border-radius: 0.234375vw;
+	transition:0.1s linear;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 8.59375vw;
+	font-weight: bold;
+        font-size: 1.0416666666666665vw;
+        color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius: 0.234375vw;
+	border-bottom-left-radius: 0.234375vw;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 1.5625vw;
+	height: 4.861111111111111vh;
+	line-height: 4.861111111111111vh;
+	border-top-left-radius: 0.234375vw;
+	border-bottom-left-radius: 0.234375vw;
+}
+
+.skillbar-bar {
+	height: 4.861111111111111vh;
+	width: 0vw;
+	background:#6adcfa;
+	border-radius: 0.234375vw;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right: 0.78125vw;
+	top: 0;
+	font-size: 0.8593750000000001vw;
+	height: 4.861111111111111vh;
+	line-height: 4.861111111111111vh;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+#html-title {
+	background-color: #f96d80;
+}
+
+#html-bar {
+	background-color: #ff9a76;
+}
+
+#css-title {
+	background-color: #1b6ca8;
+}
+
+#css-bar {
+	background-color: #0a97b0;
+}
+
+#js-title {
+	background-color: #ffcd38;
+}
+
+#js-bar {
+	background-color: #ffdd67;
+}
+
+#git-title {
+	background-color: #393e46;
+}
+
+#git-bar {
+	background-color: #3f3f44;
+}
+
+#bootstrap-title {
+	background-color: #45046a;
+}
+
+#bootstrap-bar {
+	background-color: #5c2a9d;
+}
+
+#sass-title {
+	background-color: #f54291;
+}
+
+#sass-bar {
+	background-color: #ff9595;
+}
+
+#jquery-title {
+	background-color: #27496d;
+}
+
+#jquery-bar {
+	background-color: #00909e;
+}
+
+#react-title {
+	background-color: #2fc4b2;
+}
+
+#react-bar {
+	background-color: #32e0c4;
+}
+
+#redux-title {
+	background-color: #512b58;
+}
+
+#redux-bar {
+	background-color: #5c2a9d;
+}
+
+
+
+
+
+
+/* Contact section */
+
+.contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 80vh;
+        padding: 0 2rem;
+        background: var(--main-gray);
+}
+      
+.contact-section-header > h2 {
+        font-size: 6rem;
+}
+      
+@media (max-width: 28.75em) {
+        .contact-section-header > h2 {
+                font-size: 4rem;
+        }
+}
+      
+.contact-section-header > p {
+        font-style: italic;
+}
+      
+.contact-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+}
+      
+.contact-details {
+        font-size: 2.4rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+}
+      
+.contact-details:hover {
+        transform: translateY(8px);
+}
+
+
+
+/* Footer Section */
+
+footer {
+	font-weight: 300;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem;
+	background: var(--main-gray);
+	border-top: 4px solid var(--main-lightblue);
+  }
+  
+  footer > p {
+	margin: 2rem;
+  }
+  
+  footer i {
+	vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+	footer {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  }
