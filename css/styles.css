@@ -208,7 +208,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(78%);
+    transform: translateX(45%);
 }
 
 .nav-open .nav-toggle {
@@ -476,6 +476,17 @@ header {
 	line-height: 4.861111111111111vh;
 }
 
+@media (max-width: 800px) {
+	.skillbar-title {
+		width: 30vw;
+		font-size: 3.5vw;
+	}
+
+	.skill-bar-percent {
+		font-size: 3.5vw;
+	}
+}
+
 #html-title {
 	background-color: #f96d80;
 }
@@ -567,7 +578,7 @@ header {
 }
 
 .portfolio__img {
-    transition: 
+    transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
