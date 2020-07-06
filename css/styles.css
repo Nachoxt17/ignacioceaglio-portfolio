@@ -211,6 +211,12 @@ header {
     transform: translateX(45%);
 }
 
+@media (max-width: 800px) {
+	.nav-open .nav {
+    		transform: translateX(0%);
+	}
+}
+
 .nav-open .nav-toggle {
     position: fixed;
 }
