@@ -175,6 +175,30 @@ sr.reveal('#skillbar-redux', {
   distance: '300px'
 })
 
+sr.reveal('#skillbar-node', {
+  duration: 2900,
+  origin: 'left',
+  distance: '300px'
+})
+
+sr.reveal('#skillbar-express', {
+  duration: 3000,
+  origin: 'left',
+  distance: '300px'
+})
+
+sr.reveal('#skillbar-mongodb', {
+  duration: 3100,
+  origin: 'left',
+  distance: '300px'
+})
+
+sr.reveal('#skillbar-mongoose', {
+  duration: 3200,
+  origin: 'left',
+  distance: '300px'
+})
+
 sr.reveal('.section__title--work', {
   duration: 2000,
   origin: 'top',

@@ -13,7 +13,7 @@
 
 :root {
 	--ff-primary: 'Source Sans Pro', sans-serif;
-	--ff-secondary: 'Inconsolata', monospace;
+	--ff-secondary: 'Roboto Mono', monospace;
 
     
     --fw-reg: 400;
@@ -563,6 +563,38 @@ header {
 
 #redux-bar {
 	background-color: #5c2a9d;
+}
+
+#node-title {
+	background-color: #10d441;
+}
+
+#node-bar {
+	background-color: #2fd158;
+}
+
+#express-title {
+	background-color: #480e8a;
+}
+
+#express-bar {
+	background-color: #572e86;
+}
+
+#mongodb-title {
+	background-color: #5ed410;
+}
+
+#mongodb-bar {
+	background-color: #70d12f;
+}
+
+#mongoose-title {
+	background-color: #b216ce;
+}
+
+#mongoose-bar {
+	background-color: #b54fc7;
 }
 
 /* My Work Section */
