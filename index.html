@@ -1,515 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ignacio C. - FRONT END Web Developer</title>
-        <!--Ignacio C. - Front End Web Developer (Portfolio Website).-->
-        <link
-            rel="icon"
-            type="image/png"
-            href="./img/Neon_Blue_Lightning_Icon.png"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ignacio C. - FRONT END Web Developer</title>
+    <!--Ignacio C. - Front End Web Developer (Portfolio Website).-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/Neon_Blue_Lightning_Icon.png"
+    />
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-            crossorigin="anonymous"
-        />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <!--Add Google Fonts.-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap"
-            rel="stylesheet"
-        />
+    <!--Add Google Fonts.-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Add Normalize (Para que la página se vea relativamente igual en todos los Navegadores).-->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-        />
-        <!--Add Foundation Startup(Para darle animaciones a las Skillbars).-->
-        <link rel="stylesheet" href="css/foundation.min.css" />
-        <!--Add Font Awesome.-->
-        <script
-            src="https://kit.fontawesome.com/49fa98edb7.js"
-            crossorigin="anonymous"
-        ></script>
-        <!--Add "".-->
-        <!--Add Bootstrap 4 CSS.-->
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous"
-        />
-        <!--Add JQuery.-->
-        <script
-            src="https://code.jquery.com/jquery-3.5.0.min.js"
-            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!--Add scrollreveal.-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--Custom CSS(Mi CSS Personalizado).-->
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <a
-                class="logo"
-                href="https://www.linkedin.com/in/ignacioceaglio/"
-                target="_blank"
+    <!--Add Normalize (Para que la página se vea relativamente igual en todos los Navegadores).-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <!--Add Foundation Startup(Para darle animaciones a las Skillbars).-->
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <!--Add Font Awesome.-->
+    <script
+      src="https://kit.fontawesome.com/49fa98edb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Add "".-->
+    <!--Add Bootstrap 4 CSS.-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--Add JQuery.-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Add scrollreveal.-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Custom CSS(Mi CSS Personalizado).-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        class="logo"
+        href="https://www.linkedin.com/in/ignacioceaglio/"
+        target="_blank"
+      >
+        <img src="img/ignacio-c.-webdev-logo.png" alt="IGNACIO C. WEBDEV" />
+      </a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link mx-5">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link mx-5">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link mx-5">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link mx-5">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link mx-5">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction. -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Ignacio Ceaglio</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        <strong>FRONT END WEB DEV</strong>
+      </p>
+      <img
+        src="img/Laboral-Profile-Photo-01.jpg"
+        alt="A Picture of Ignacio C. Smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My Services. -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        <strong>What can I do for you?</strong>
+      </h2>
+      <div class="services">
+        <div class="service" id="service1">
+          <h3><strong>DESIGN + DEVELOPMENT</strong></h3>
+          <p>
+            Clean, modern designs optimized for performance, intuitive
+            navigation, and converting users to customers.
+            <strong
+              >"If your business is not on the internet, then your business will
+              be out of business."</strong
             >
-                <img
-                    src="img/ignacio-c.-webdev-logo.png"
-                    alt="IGNACIO C. WEBDEV"
-                />
-            </a>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link mx-5">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link mx-5"
-                            >My Services</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link mx-5">About me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link mx-5">My Work</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link mx-5">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            - Bill Gates.
+          </p>
+        </div>
 
-        <!-- Introduction. -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Ignacio Ceaglio</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">
-                <strong>FRONT END WEB DEV</strong>
-            </p>
-            <img
-                src="img/Laboral-Profile-Photo-01.jpg"
-                alt="A Picture of Ignacio C. Smiling"
-                class="intro__img"
-            />
-        </section>
+        <div class="service" id="service2">
+          <h3><strong>MOBILE-FRIENDLY</strong></h3>
+          <p>
+            A Responsive Web Design makes your website accessible to all users,
+            regardless of their device.
+            <strong>Today's dynamics require that your Website</strong>
+            to be accessible and comfortable from any type of screen.
+          </p>
+        </div>
 
-        <!-- My Services. -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">
-                <strong>What can I do for you?</strong>
-            </h2>
-            <div class="services">
-                <div class="service" id="service1">
-                    <h3><strong>DESIGN + DEVELOPMENT</strong></h3>
-                    <p>
-                        Clean, modern designs optimized for perfomance,
-                        intuitive navigation, and converting users to customers.
-                        <strong
-                            >"If your business is not on the internet, then your
-                            business will be out of business"</strong
-                        >
-                        - Bill Gates.
-                    </p>
-                </div>
+        <div class="service" id="service3">
+          <h3><strong>ENGLISH-SPANISH TRANSLATION</strong></h3>
+          <p>
+            Do you work with an International Team or do you need your Website
+            or text to be in both Shakespeare's and Cervantes's Languages? No
+            problem!
+            <strong
+              >1,132 Million People Worldwide are English-speaking and 534
+              Million speak Spanish</strong
+            >, and I will help you and your Business to reach all of them.
+          </p>
+        </div>
+      </div>
 
-                <div class="service" id="service2">
-                    <h3><strong>MOBILE-FRIENDLY</strong></h3>
-                    <p>
-                        A Responsive Web Design makes your website accessible to
-                        all users, regardless of their device.
-                        <strong
-                            >Today's dynamics require that your Website</strong
-                        >
-                        to be accessible and comfortable from any type of
-                        screen.
-                    </p>
-                </div>
+      <a href="#work" class="btn1" id="btnWork"
+        ><strong>My Work</strong><br /><i class="fas fa-chevron-down"></i
+      ></a>
+    </section>
 
-                <div class="service" id="service3">
-                    <h3><strong>ENGLISH-SPANISH TRANSLATION</strong></h3>
-                    <p>
-                        Do you work with an International Team or do you need
-                        your Website or text to be in both Shakespeare's and
-                        Cervantes's Languages? No problem!
-                        <strong
-                            >1,132 Million People Worldwide are English-speaking
-                            and 534 Million speak Spanish</strong
-                        >, and I will help you and your Business to reach all of
-                        them.
-                    </p>
-                </div>
-            </div>
+    <!-- About Me. -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">
+        <strong>Who's this guy?</strong>
+      </h2>
+      <p class="section__subtitle section__subtitle--about">
+        FRONT END WEB DEVELOPER Jr
+      </p>
+      <div class="about-me__body">
+        <p>
+          <strong>
+            Hi! :), I'm Ignacio. I am a Front End Web Developer Junior based in
+            Argentina. I have Basic Knowledge in various Back-End Technologies,
+            but I am Front-End oriented until I perfect myself. I'm Fast Learner
+            and Naturally Curious Person who loves to learn new things every
+            day. I think there is nothing better than a "Let's do it!" attitude
+            when working with a good team on a project, and I have serious
+            passion for creating intuitive, dynamic navigation experiences.
+            <a href="#contact" class="btn1">Let's make something special.</a>
+          </strong>
+        </p>
+      </div>
 
-            <a href="#work" class="btn1" id="btnWork"
-                ><strong>My Work</strong><br /><i
-                    class="fas fa-chevron-down"
-                ></i
-            ></a>
-        </section>
+      <img
+        src="img/Laboral-Profile-Photo-02.jpg"
+        alt="A Picture of Ignacio C. Smiling in a Mountain"
+        class="about-me__img"
+      />
+    </section>
 
-        <!-- About Me. -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">
-                <strong>Who's this guy?</strong>
-            </h2>
-            <p class="section__subtitle section__subtitle--about">
-                FRONT END WEB DEVELOPER Jr
-            </p>
-            <div class="about-me__body">
-                <p>
-                    <strong>
-                        Hi! :), I'm Ignacio. I am a Front End Web Developer
-                        Junior based in Argentina. I have Basic Knowledge in
-                        various Back-End Technologies but I am Front-End
-                        oriented until I perfect myself. I'm Fast Learner and
-                        Naturally Curious Person who loves to learn new things
-                        every day. I think there is nothing better than a "Let's
-                        do it!" attitude when working with a good team on a
-                        project, and I have serious passion for creating
-                        intuitive, dynamic navigation experiences.
-                        <a href="#contact" class="btn1"
-                            >Let's make something special.</a
-                        >
-                    </strong>
-                </p>
-            </div>
+    <!-- My Skills. -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">
+        <strong>My Web Development Skills</strong>
+      </h2>
+      <hr />
+      <div class="large-12 columns">
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-html"
+          data-percent="96%"
+        >
+          <div class="skillbar-title" id="html-title">
+            <span>HTML5</span>
+          </div>
+          <div class="skillbar-bar" id="html-bar"></div>
+          <div class="skill-bar-percent"><strong>96%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-css"
+          data-percent="76%"
+        >
+          <div class="skillbar-title" id="css-title">
+            <span>CSS3</span>
+          </div>
+          <div class="skillbar-bar" id="css-bar"></div>
+          <div class="skill-bar-percent"><strong>76%</strong></div>
+        </div>
+        <div class="skillbar clearfix my-5" id="skillbar-js" data-percent="83%">
+          <div class="skillbar-title" id="js-title">
+            <span>JAVASCRIPT ES6+</span>
+          </div>
+          <div class="skillbar-bar" id="js-bar"></div>
+          <div class="skill-bar-percent"><strong>83%</strong></div>
+        </div>
+        <div class="skillbar clearfix my-5" id="skillbar-ts" data-percent="83%">
+          <div class="skillbar-title" id="ts-title">
+            <span>TYPESCRIPT</span>
+          </div>
+          <div class="skillbar-bar" id="ts-bar"></div>
+          <div class="skill-bar-percent"><strong>83%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-git"
+          data-percent="85%"
+        >
+          <div class="skillbar-title" id="git-title">
+            <span>GIT/GITHUB</span>
+          </div>
+          <div class="skillbar-bar" id="git-bar"></div>
+          <div class="skill-bar-percent"><strong>85%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-bootstrap"
+          data-percent="91%"
+        >
+          <div class="skillbar-title" id="bootstrap-title">
+            <span>BOOTSTRAP 4</span>
+          </div>
+          <div class="skillbar-bar" id="bootstrap-bar"></div>
+          <div class="skill-bar-percent"><strong>91%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-sass"
+          data-percent="54%"
+        >
+          <div class="skillbar-title" id="sass-title">
+            <span>SASS</span>
+          </div>
+          <div class="skillbar-bar" id="sass-bar"></div>
+          <div class="skill-bar-percent"><strong>54%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-jquery"
+          data-percent="71%"
+        >
+          <div class="skillbar-title" id="jquery-title">
+            <span>JQuery</span>
+          </div>
+          <div class="skillbar-bar" id="jquery-bar"></div>
+          <div class="skill-bar-percent"><strong>71%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-react"
+          data-percent="75%"
+        >
+          <div class="skillbar-title" id="react-title">
+            <span>REACT.JS</span>
+          </div>
+          <div class="skillbar-bar" id="react-bar"></div>
+          <div class="skill-bar-percent"><strong>75%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-redux"
+          data-percent="52%"
+        >
+          <div class="skillbar-title" id="redux-title">
+            <span>REDUX</span>
+          </div>
+          <div class="skillbar-bar" id="redux-bar"></div>
+          <div class="skill-bar-percent"><strong>52%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-node"
+          data-percent="65%"
+        >
+          <div class="skillbar-title" id="node-title">
+            <span>NODE.JS</span>
+          </div>
+          <div class="skillbar-bar" id="node-bar"></div>
+          <div class="skill-bar-percent"><strong>65%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-express"
+          data-percent="55%"
+        >
+          <div class="skillbar-title" id="express-title">
+            <span>EXPRESS.JS</span>
+          </div>
+          <div class="skillbar-bar" id="express-bar"></div>
+          <div class="skill-bar-percent"><strong>55%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-mongodb"
+          data-percent="65%"
+        >
+          <div class="skillbar-title" id="mongodb-title">
+            <span>MongoDB</span>
+          </div>
+          <div class="skillbar-bar" id="mongodb-bar"></div>
+          <div class="skill-bar-percent"><strong>65%</strong></div>
+        </div>
+        <div
+          class="skillbar clearfix my-5"
+          id="skillbar-mongoose"
+          data-percent="54%"
+        >
+          <div class="skillbar-title" id="mongoose-title">
+            <span>MONGOOSE</span>
+          </div>
+          <div class="skillbar-bar" id="mongoose-bar"></div>
+          <div class="skill-bar-percent"><strong>54%</strong></div>
+        </div>
+      </div>
+    </section>
 
-            <img
-                src="img/Laboral-Profile-Photo-02.jpg"
-                alt="A Picture of Ignacio C. Smiling in a Mountain"
-                class="about-me__img"
-            />
-        </section>
+    <!-- My Work. -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        See some of my last adventures...
+      </p>
 
-        <!-- My Skills. -->
-        <section class="my-skills" id="skills">
-            <h2 class="section__title section__title--skills">
-                <strong>My Web Development Skills</strong>
-            </h2>
-            <hr />
-            <div class="large-12 columns">
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-html"
-                    data-percent="96%"
-                >
-                    <div class="skillbar-title" id="html-title">
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skillbar-bar" id="html-bar"></div>
-                    <div class="skill-bar-percent"><strong>96%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-css"
-                    data-percent="76%"
-                >
-                    <div class="skillbar-title" id="css-title">
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skillbar-bar" id="css-bar"></div>
-                    <div class="skill-bar-percent"><strong>76%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-js"
-                    data-percent="83%"
-                >
-                    <div class="skillbar-title" id="js-title">
-                        <span>JAVASCRIPT ES6+</span>
-                    </div>
-                    <div class="skillbar-bar" id="js-bar"></div>
-                    <div class="skill-bar-percent"><strong>83%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-ts"
-                    data-percent="83%"
-                >
-                    <div class="skillbar-title" id="ts-title">
-                        <span>TYPESCRIPT</span>
-                    </div>
-                    <div class="skillbar-bar" id="ts-bar"></div>
-                    <div class="skill-bar-percent"><strong>83%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-git"
-                    data-percent="85%"
-                >
-                    <div class="skillbar-title" id="git-title">
-                        <span>GIT/GITHUB</span>
-                    </div>
-                    <div class="skillbar-bar" id="git-bar"></div>
-                    <div class="skill-bar-percent"><strong>85%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-bootstrap"
-                    data-percent="91%"
-                >
-                    <div class="skillbar-title" id="bootstrap-title">
-                        <span>BOOTSTRAP 4</span>
-                    </div>
-                    <div class="skillbar-bar" id="bootstrap-bar"></div>
-                    <div class="skill-bar-percent"><strong>91%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-sass"
-                    data-percent="54%"
-                >
-                    <div class="skillbar-title" id="sass-title">
-                        <span>SASS</span>
-                    </div>
-                    <div class="skillbar-bar" id="sass-bar"></div>
-                    <div class="skill-bar-percent"><strong>54%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-jquery"
-                    data-percent="71%"
-                >
-                    <div class="skillbar-title" id="jquery-title">
-                        <span>JQuery</span>
-                    </div>
-                    <div class="skillbar-bar" id="jquery-bar"></div>
-                    <div class="skill-bar-percent"><strong>71%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-react"
-                    data-percent="75%"
-                >
-                    <div class="skillbar-title" id="react-title">
-                        <span>REACT.JS</span>
-                    </div>
-                    <div class="skillbar-bar" id="react-bar"></div>
-                    <div class="skill-bar-percent"><strong>75%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-redux"
-                    data-percent="52%"
-                >
-                    <div class="skillbar-title" id="redux-title">
-                        <span>REDUX</span>
-                    </div>
-                    <div class="skillbar-bar" id="redux-bar"></div>
-                    <div class="skill-bar-percent"><strong>52%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-node"
-                    data-percent="65%"
-                >
-                    <div class="skillbar-title" id="node-title">
-                        <span>NODE.JS</span>
-                    </div>
-                    <div class="skillbar-bar" id="node-bar"></div>
-                    <div class="skill-bar-percent"><strong>65%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-express"
-                    data-percent="55%"
-                >
-                    <div class="skillbar-title" id="express-title">
-                        <span>EXPRESS.JS</span>
-                    </div>
-                    <div class="skillbar-bar" id="express-bar"></div>
-                    <div class="skill-bar-percent"><strong>55%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-mongodb"
-                    data-percent="65%"
-                >
-                    <div class="skillbar-title" id="mongodb-title">
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skillbar-bar" id="mongodb-bar"></div>
-                    <div class="skill-bar-percent"><strong>65%</strong></div>
-                </div>
-                <div
-                    class="skillbar clearfix my-5"
-                    id="skillbar-mongoose"
-                    data-percent="54%"
-                >
-                    <div class="skillbar-title" id="mongoose-title">
-                        <span>MONGOOSE</span>
-                    </div>
-                    <div class="skillbar-bar" id="mongoose-bar"></div>
-                    <div class="skill-bar-percent"><strong>54%</strong></div>
-                </div>
-            </div>
-        </section>
+      <div class="portfolio">
+        <a
+          href="https://nachoxt17.github.io/React-Typescript-Practic-Example/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/react-and-typescript-task-app.png"
+            alt="React.js and Typescipt Tasks App"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            React.js and Typescipt Tasks App
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-        <!-- My Work. -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">
-                See some of my last adventures...
-            </p>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-10.jpg"
+            alt="Typescipt Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Typescipt Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-            <div class="portfolio">
-                <a
-                    href="https://nachoxt17.github.io/React-Typescript-Practic-Example/"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/react-and-typescript-task-app.png"
-                        alt="React.js and Typescipt Tasks App"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        React.js and Typescipt Tasks App
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17/node.js-and-mongodb-web-notes-app-with-login"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/nodejs-and-mongodb-notes-app-proyect.png"
+            alt="Notes App with Node.js, Express.js, MongoDB and Mongoose"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Notes App with Node.js, Express.js, MongoDB and Mongoose
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-10.jpg"
-                        alt="Typescipt Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Typescipt Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-09.jpg"
+            alt="Mongoose Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Mongoose Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17/node.js-and-mongodb-web-notes-app-with-login"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/nodejs-and-mongodb-notes-app-proyect.png"
-                        alt="Notes App with Node.js, Express.js, MongoDB and Mongoose"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Notes App with Node.js, Express.js, MongoDB and Mongoose
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17/Rest-API-Excercise-with-Node.js-and-Express.js"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-08.jpg"
+            alt="Movies Rest API Excercise with Node.js and Express.js"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Movies Rest API Excercise with Node.js and Express.js
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-09.jpg"
-                        alt="Mongoose Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Mongoose Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17/First-WebPage-with-Node.js-and-Express.js"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/first-webpage-with-node.js-and-express.js-project.png"
+            alt="My First Webpage with Node.js and Express.js"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            My First Webpage with Node.js and Express.js
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17/Rest-API-Excercise-with-Node.js-and-Express.js"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-08.jpg"
-                        alt="Movies Rest API Excercise with Node.js and Express.js"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Movies Rest API Excercise with Node.js and Express.js
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-06.jpg"
+            alt="Express.js Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Express.js Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17/First-WebPage-with-Node.js-and-Express.js"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/first-webpage-with-node.js-and-express.js-project.png"
-                        alt="My First Webpage with Node.js and Express.js"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        My First Webpage with Node.js and Express.js
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-03.jpg"
+            alt="Node.js Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Node.js Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-06.jpg"
-                        alt="Express.js Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Express.js Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-03.jpg"
-                        alt="Node.js Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Node.js Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                
-                <!--
+        <!--
                 <a
                     href="https://nachoxt17.github.io/weather-app-with-react/"
                     class="portfolio__item"
@@ -528,238 +505,233 @@
                 </a>
                 -->
 
-                <a
-                    href="https://nachoxt17.github.io/movie-search-app-react.js/"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/movie-search-app-project.png"
-                        alt="Movie Search Web with React.js"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Movie Search Web with React.js
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://nachoxt17.github.io/movie-search-app-react.js/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/movie-search-app-project.png"
+            alt="Movie Search Web with React.js"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Movie Search Web with React.js
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://nachoxt17.github.io/Task-App-Final/"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/react-task-app-project.png"
-                        alt="Task App with React.js"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span>&lt;</span>
-                        Task App with React.js
-                        <span>&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://nachoxt17.github.io/Task-App-Final/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/react-task-app-project.png"
+            alt="Task App with React.js"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span>&lt;</span>
+            Task App with React.js
+            <span>&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-02.jpg"
-                        alt="React.js 16 and Redux Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        React.js Hooks,Redux & Redux-Sagas Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-02.jpg"
+            alt="React.js 16 and Redux Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            React.js Hooks,Redux & Redux-Sagas Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://nachoxt17.github.io/Random-Quotes-Machine---FCC-1-of-5-Front-End-Libraries-Projects/"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/random-quotes-machine-project.png"
-                        alt="Random Quotes Machine"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Random Quotes Machine
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://nachoxt17.github.io/Random-Quotes-Machine---FCC-1-of-5-Front-End-Libraries-Projects/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/random-quotes-machine-project.png"
+            alt="Random Quotes Machine"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Random Quotes Machine
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-04.jpg"
-                        alt="SASS Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        SASS Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-04.jpg"
+            alt="SASS Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            SASS Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-01.jpg"
-                        alt="JQuery Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        JQuery Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-01.jpg"
+            alt="JQuery Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            JQuery Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://nachoxt17.github.io/Complete-Website-with-Bootstrap-4-Scroll-Reveal-and-Smoth-Scrolling---Landing-Product/"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/smartphone-landing-page-bootstrap-4-project.png"
-                        alt="Smartphone Landing Page"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Smartphone Landing Page
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
+        <a
+          href="https://nachoxt17.github.io/Complete-Website-with-Bootstrap-4-Scroll-Reveal-and-Smoth-Scrolling---Landing-Product/"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/smartphone-landing-page-bootstrap-4-project.png"
+            alt="Smartphone Landing Page"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Smartphone Landing Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
 
-                <a
-                    href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
-                    class="portfolio__item"
-                    target="_blank"
-                >
-                    <img
-                        src="img/portfolio-07.jpg"
-                        alt="Bootstrap 4 Course"
-                        class="portfolio__img"
-                    />
-                    <p class="project-title">
-                        <span class="code">&lt;</span>
-                        Bootstrap 4 Course
-                        <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-            </div>
-        </section>
+        <a
+          href="https://github.com/Nachoxt17?tab=projects&q=is:closed"
+          class="portfolio__item"
+          target="_blank"
+        >
+          <img
+            src="img/portfolio-07.jpg"
+            alt="Bootstrap 4 Course"
+            class="portfolio__img"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Bootstrap 4 Course
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+    </section>
 
-        <!-- Contact. -->
-        <section class="contact-section" id="contact">
-            <div class="contact-section-header">
-                <h2><strong>Get in touch!</strong></h2>
-                <h4><strong>How do you like Coffee...?</strong></h4>
-            </div>
-            <ul class="social-list">
-                <li class="social-list__item" id="linkedin">
-                    <a
-                        id="profile-link"
-                        href="https://www.linkedin.com/in/ignacioceaglio/"
-                        target="_blank"
-                        class="social-list__link"
-                        ><i class="fab fa-linkedin"></i> Linkedin</a
-                    >
-                </li>
+    <!-- Contact. -->
+    <section class="contact-section" id="contact">
+      <div class="contact-section-header">
+        <h2><strong>Get in touch!</strong></h2>
+        <h4><strong>How do you like Coffee...?</strong></h4>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item" id="linkedin">
+          <a
+            id="profile-link"
+            href="https://www.linkedin.com/in/ignacioceaglio/"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fab fa-linkedin"></i> Linkedin</a
+          >
+        </li>
 
-                <li class="social-list__item" id="resume">
-                    <a
-                        id="profile-link"
-                        href="https://gitconnected.com/nachoxt17/resume"
-                        target="_blank"
-                        class="social-list__link"
-                        ><i class="far fa-file"></i> Download CV</a
-                    >
-                </li>
+        <li class="social-list__item" id="resume">
+          <a
+            id="profile-link"
+            href="https://gitconnected.com/nachoxt17/resume"
+            target="_blank"
+            class="social-list__link"
+            ><i class="far fa-file"></i> Download CV</a
+          >
+        </li>
 
-                <li class="social-list__item" id="github">
-                    <a
-                        id="profile-link"
-                        href="https://github.com/Nachoxt17"
-                        target="_blank"
-                        class="social-list__link"
-                        ><i class="fab fa-github"></i> GitHub</a
-                    >
-                </li>
+        <li class="social-list__item" id="github">
+          <a
+            id="profile-link"
+            href="https://github.com/Nachoxt17"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
 
-                <li class="social-list__item" id="upwork">
-                    <a
-                        href="https://www.upwork.com/freelancers/~01016dcdaa54e14741?viewMode=1&s=1110580755057594368"
-                        target="_blank"
-                        class="social-list__link"
-                        ><i class="fas fa-laptop-house"></i> UpWork</a
-                    >
-                </li>
+        <li class="social-list__item" id="upwork">
+          <a
+            href="https://www.upwork.com/freelancers/~01016dcdaa54e14741?viewMode=1&s=1110580755057594368"
+            target="_blank"
+            class="social-list__link"
+            ><i class="fas fa-laptop-house"></i> UpWork</a
+          >
+        </li>
 
-                <li class="social-list__item" id="email">
-                    <a
-                        href="mailto:ignacioceaglio@gmail.com"
-                        class="social-list__link"
-                        ><i class="fas fa-at"></i> Send a mail</a
-                    >
-                </li>
+        <li class="social-list__item" id="email">
+          <a href="mailto:ignacioceaglio@gmail.com" class="social-list__link"
+            ><i class="fas fa-at"></i> Send a mail</a
+          >
+        </li>
 
-                <li class="social-list__item" id="cellphone">
-                    <a href="tel:+54-3404-154-155-94" class="social-list__link"
-                        ><i class="fas fa-mobile-alt"></i> Text me</a
-                    >
-                </li>
-            </ul>
-        </section>
+        <li class="social-list__item" id="cellphone">
+          <a href="tel:+54-3404-154-155-94" class="social-list__link"
+            ><i class="fas fa-mobile-alt"></i> Text me</a
+          >
+        </li>
+      </ul>
+    </section>
 
-        <!-- Footer. -->
-        <footer>
-            <p>
-                <strong>&copy; IGNACIO CEAGLIO 2020</strong>
-                <a
-                    href="https://www.linkedin.com/in/ignacioceaglio/"
-                    target="_blank"
-                >
-                    <strong>Linkedin</strong>
-                    <i class="fab fa-linkedin"></i
-                ></a>
-            </p>
-        </footer>
+    <!-- Footer. -->
+    <footer>
+      <p>
+        <strong>&copy; IGNACIO CEAGLIO 2020</strong>
+        <a href="https://www.linkedin.com/in/ignacioceaglio/" target="_blank">
+          <strong>Linkedin</strong>
+          <i class="fab fa-linkedin"></i
+        ></a>
+      </p>
+    </footer>
 
-        <!--Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos.-->
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!--SCRIPTS(My Custom JavaScript).-->
-        <script src="js/index.js"></script>
-    </body>
+    <!--Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos.-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--SCRIPTS(My Custom JavaScript).-->
+    <script src="js/index.js"></script>
+  </body>
 </html>
