@@ -12,280 +12,286 @@
  * $ npm i redux (Y le damos ENTER)
  * .*/
 
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link');
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav__link");
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
 });
 
 navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    });
+  link.addEventListener("click", () => {
+    document.body.classList.remove("nav-open");
+  });
 });
 
 window.sr = ScrollReveal({});
 
-sr.reveal('.logo', {
-    duration: 2000,
-    origin: 'top',
+sr.reveal(".logo", {
+  duration: 2000,
+  origin: "top",
 });
 
-sr.reveal('.nav-toggle', {
-    duration: 2000,
-    origin: 'top',
+sr.reveal(".nav-toggle", {
+  duration: 2000,
+  origin: "top",
 });
 
-sr.reveal('.section__title--intro', {
-    duration: 2000,
-    origin: 'right',
-    distance: '350px',
+sr.reveal(".section__title--intro", {
+  duration: 2000,
+  origin: "right",
+  distance: "350px",
 });
 
-sr.reveal('.intro__img', {
-    duration: 2000,
-    origin: 'top',
-    distance: '350px',
+sr.reveal(".intro__img", {
+  duration: 2000,
+  origin: "top",
+  distance: "350px",
 });
 
-sr.reveal('.section__subtitle--intro', {
-    duration: 2000,
-    origin: 'left',
-    distance: '350px',
+sr.reveal(".section__subtitle--intro", {
+  duration: 2000,
+  origin: "left",
+  distance: "350px",
 });
 
-sr.reveal('.section__title--services', {
-    duration: 2000,
-    origin: 'top',
-    distance: '200px',
+sr.reveal(".section__title--services", {
+  duration: 2000,
+  origin: "top",
+  distance: "200px",
 });
 
-sr.reveal('#service1', {
-    duration: 2500,
-    origin: 'bottom',
-    distance: '350px',
+sr.reveal("#service1", {
+  duration: 2500,
+  origin: "bottom",
+  distance: "350px",
 });
 
-sr.reveal('#service2', {
-    duration: 3000,
-    origin: 'bottom',
-    distance: '350px',
+sr.reveal("#service2", {
+  duration: 3000,
+  origin: "bottom",
+  distance: "350px",
 });
 
-sr.reveal('#service3', {
-    duration: 3500,
-    origin: 'bottom',
-    distance: '350px',
+sr.reveal("#service3", {
+  duration: 3500,
+  origin: "bottom",
+  distance: "350px",
 });
 
-sr.reveal('#btnWork', {
-    duration: 3300,
-    origin: 'bottom',
-    distance: '100px',
+sr.reveal("#btnWork", {
+  duration: 3300,
+  origin: "bottom",
+  distance: "100px",
 });
 
-sr.reveal('.section__title--about', {
-    duration: 2000,
-    origin: 'left',
-    distance: '350px',
+sr.reveal(".section__title--about", {
+  duration: 2000,
+  origin: "left",
+  distance: "350px",
 });
 
-sr.reveal('.section__subtitle--about', {
-    duration: 2000,
-    origin: 'right',
-    distance: '350px',
+sr.reveal(".section__subtitle--about", {
+  duration: 2000,
+  origin: "right",
+  distance: "350px",
 });
 
-sr.reveal('.about-me__img', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '350px',
+sr.reveal(".about-me__img", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "350px",
 });
 
-sr.reveal('.about-me__body', {
-    duration: 2750,
-    origin: 'bottom',
-    distance: '100px',
+sr.reveal(".about-me__body", {
+  duration: 2750,
+  origin: "bottom",
+  distance: "100px",
 });
 
-sr.reveal('.about-me__body a', {
-    duration: 2900,
-    origin: 'bottom',
-    distance: '75px',
+sr.reveal(".about-me__body a", {
+  duration: 2900,
+  origin: "bottom",
+  distance: "75px",
 });
 
-sr.reveal('.section__title--skills', {
-    duration: 2000,
-    origin: 'top',
-    distance: '100px',
+sr.reveal(".section__title--skills", {
+  duration: 2000,
+  origin: "top",
+  distance: "100px",
 });
 
-sr.reveal('#skillbar-html', {
-    duration: 2000,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-html", {
+  duration: 2000,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-css', {
-    duration: 2100,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-css", {
+  duration: 2100,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-js', {
-    duration: 2200,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-js", {
+  duration: 2200,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-ts', {
-    duration: 2300,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-ts", {
+  duration: 2300,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-git', {
-    duration: 2400,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-git", {
+  duration: 2400,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-bootstrap', {
-    duration: 2500,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-bootstrap", {
+  duration: 2500,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-sass', {
-    duration: 2600,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-material-ui", {
+  duration: 2600,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-jquery', {
-    duration: 2700,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-sass", {
+  duration: 2700,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-react', {
-    duration: 2800,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-jquery", {
+  duration: 2800,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-redux', {
-    duration: 2900,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-react", {
+  duration: 2900,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-node', {
-    duration: 3000,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-redux", {
+  duration: 3000,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-express', {
-    duration: 3100,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-node", {
+  duration: 3100,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-mongodb', {
-    duration: 3200,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-express", {
+  duration: 3200,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('#skillbar-mongoose', {
-    duration: 3300,
-    origin: 'left',
-    distance: '300px',
+sr.reveal("#skillbar-mongodb", {
+  duration: 3300,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('.section__title--work', {
-    duration: 2000,
-    origin: 'top',
-    distance: '100px',
+sr.reveal("#skillbar-mongoose", {
+  duration: 3400,
+  origin: "left",
+  distance: "300px",
 });
 
-sr.reveal('.section__title--work', {
-    duration: 2000,
-    origin: 'top',
-    distance: '200px',
+sr.reveal(".section__title--work", {
+  duration: 2000,
+  origin: "top",
+  distance: "100px",
 });
 
-sr.reveal('.section__subtitle--work', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '60px',
+sr.reveal(".section__title--work", {
+  duration: 2000,
+  origin: "top",
+  distance: "200px",
 });
 
-sr.reveal('.portfolio__item', {
-    duration: 3000,
-    origin: 'bottom',
-    distance: '60px',
+sr.reveal(".section__subtitle--work", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "60px",
 });
 
-sr.reveal('.contact-section-header h2', {
-    duration: 2000,
-    origin: 'left',
-    distance: '350px',
+sr.reveal(".portfolio__item", {
+  duration: 3000,
+  origin: "bottom",
+  distance: "60px",
 });
 
-sr.reveal('.contact-section-header h4', {
-    duration: 2000,
-    origin: 'right',
-    distance: '350px',
+sr.reveal(".contact-section-header h2", {
+  duration: 2000,
+  origin: "left",
+  distance: "350px",
 });
 
-sr.reveal('#linkedin', {
-    duration: 2100,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal(".contact-section-header h4", {
+  duration: 2000,
+  origin: "right",
+  distance: "350px",
 });
 
-sr.reveal('#resume', {
-    duration: 2300,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal("#linkedin", {
+  duration: 2100,
+  origin: "bottom",
+  distance: "300px",
 });
 
-sr.reveal('#github', {
-    duration: 2500,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal("#resume", {
+  duration: 2300,
+  origin: "bottom",
+  distance: "300px",
 });
 
-sr.reveal('#upwork', {
-    duration: 2700,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal("#github", {
+  duration: 2500,
+  origin: "bottom",
+  distance: "300px",
 });
 
-sr.reveal('#email', {
-    duration: 2900,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal("#upwork", {
+  duration: 2700,
+  origin: "bottom",
+  distance: "300px",
 });
 
-sr.reveal('#cellphone', {
-    duration: 3100,
-    origin: 'bottom',
-    distance: '300px',
+sr.reveal("#email", {
+  duration: 2900,
+  origin: "bottom",
+  distance: "300px",
+});
+
+sr.reveal("#cellphone", {
+  duration: 3100,
+  origin: "bottom",
+  distance: "300px",
 });
 
 jQuery(document).ready(function () {
-    jQuery('.skillbar').each(function () {
-        jQuery(this)
-            .find('.skillbar-bar')
-            .animate(
-                {
-                    width: jQuery(this).attr('data-percent'),
-                },
-                4000
-            );
-    });
+  jQuery(".skillbar").each(function () {
+    jQuery(this)
+      .find(".skillbar-bar")
+      .animate(
+        {
+          width: jQuery(this).attr("data-percent"),
+        },
+        4000
+      );
+  });
 });
