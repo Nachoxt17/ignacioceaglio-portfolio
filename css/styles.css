@@ -530,6 +530,38 @@ header {
   background-color: #ebbb0e;
 }
 
+#solidity-title {
+  background-color: #26292e;
+}
+
+#solidity-bar {
+  background-color: #35353a;
+}
+
+#web3js-title {
+  background-color: #f87203;
+}
+
+#web3js-bar {
+  background-color: #ff8f33;
+}
+
+#truffle-suite-title {
+  background-color: #03e6f7;
+}
+
+#truffle-suite-bar {
+  background-color: #74e6ee;
+}
+
+#ipfs-title {
+  background-color: #2632dd;
+}
+
+#ipfs-bar {
+  background-color: #3944db;
+}
+
 #git-title {
   background-color: #393e46;
 }

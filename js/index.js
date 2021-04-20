@@ -145,68 +145,86 @@ sr.reveal("#skillbar-ts", {
   distance: "300px",
 });
 
-sr.reveal("#skillbar-git", {
+sr.reveal("#skillbar-solidity", {
   duration: 2400,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-bootstrap", {
+sr.reveal("#skillbar-web3js", {
   duration: 2500,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-material-ui", {
+sr.reveal("#skillbar-truffle-suite", {
   duration: 2600,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-sass", {
+sr.reveal("#skillbar-ipfs", {
   duration: 2700,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-jquery", {
+sr.reveal("#skillbar-git", {
   duration: 2800,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-react", {
+sr.reveal("#skillbar-bootstrap", {
   duration: 2900,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-redux", {
+sr.reveal("#skillbar-material-ui", {
   duration: 3000,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-node", {
+sr.reveal("#skillbar-sass", {
   duration: 3100,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-express", {
+sr.reveal("#skillbar-react", {
   duration: 3200,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-mongodb", {
+sr.reveal("#skillbar-redux", {
   duration: 3300,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-mongoose", {
+sr.reveal("#skillbar-node", {
   duration: 3400,
+  origin: "left",
+  distance: "300px",
+});
+
+sr.reveal("#skillbar-express", {
+  duration: 3500,
+  origin: "left",
+  distance: "300px",
+});
+
+sr.reveal("#skillbar-mongodb", {
+  duration: 3600,
+  origin: "left",
+  distance: "300px",
+});
+
+sr.reveal("#skillbar-mongoose", {
+  duration: 3700,
   origin: "left",
   distance: "300px",
 });
