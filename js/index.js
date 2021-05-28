@@ -205,26 +205,32 @@ sr.reveal("#skillbar-redux", {
   distance: "300px",
 });
 
-sr.reveal("#skillbar-node", {
+sr.reveal("#skillbar-vue", {
   duration: 3400,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-express", {
+sr.reveal("#skillbar-node", {
   duration: 3500,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-mongodb", {
+sr.reveal("#skillbar-express", {
   duration: 3600,
   origin: "left",
   distance: "300px",
 });
 
-sr.reveal("#skillbar-mongoose", {
+sr.reveal("#skillbar-mongodb", {
   duration: 3700,
+  origin: "left",
+  distance: "300px",
+});
+
+sr.reveal("#skillbar-mongoose", {
+  duration: 3800,
   origin: "left",
   distance: "300px",
 });
