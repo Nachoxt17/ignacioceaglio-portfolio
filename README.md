@@ -1,4 +1,4 @@
-Enter HERE:_:_
-https://nachoxt17.github.io/ignacioceaglio-portfolio/:_
+Enter HERE:_
+https://nachoxt17.github.io/ignacioceaglio-portfolio/
 
 
